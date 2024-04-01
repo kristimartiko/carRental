@@ -24,6 +24,6 @@ public class Car extends BaseEntity {
     @NotEmpty(message = "Quantity must not be null")
     private int quantity;
 
-    @OneToMany(mappedBy = "price", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
     private List<Price> prices;
 }
